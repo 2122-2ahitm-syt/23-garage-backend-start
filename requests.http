@@ -1,0 +1,32 @@
+POST http://localhost:3000/api/cars HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "model": "x3", 
+    "maker": "BMW", 
+    "productionYear": 2017, 
+    "registrationYear": 2018, 
+    "isElectric": false 
+}
+
+###############################################
+
+PUT http://localhost:3000/api/cars/1 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "id": 1,
+    "model": "e-Golf", 
+    "maker": "Volkswagen", 
+    "productionYear": 2020, 
+    "registrationYear": 2021, 
+    "isElectric": true 
+}
+
+##############################################
+
+DELETE http://localhost:3000/api/cars HTTP/1.1
+
+##############################################
+
+DELETE http://localhost:3000/api/cars/2 HTTP/1.1
